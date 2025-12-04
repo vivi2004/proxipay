@@ -342,17 +342,34 @@ npm test
 
 ### Building for Production
 
-#### Android APK
+This project uses Expo ~54.0.0, which requires EAS Build for production builds.
+
+#### Setup EAS Build
 ```bash
+# Install EAS CLI globally
+npm install -g eas-cli
+
+# Login to your Expo account
+eas login
+
+# Configure EAS Build
 cd proxipay-frontend
-expo build:android
+eas build:configure
 ```
 
-#### iOS IPA
+#### Build for Android
 ```bash
 cd proxipay-frontend
-expo build:ios
+eas build --platform android
 ```
+
+#### Build for iOS
+```bash
+cd proxipay-frontend
+eas build --platform ios
+```
+
+For more information, visit the [EAS Build documentation](https://docs.expo.dev/build/introduction/).
 
 ---
 
