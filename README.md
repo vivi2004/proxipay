@@ -52,10 +52,10 @@ Built with **React Native**, **Expo**, **Node.js**, and **MongoDB** for a comple
 
 Before you begin, ensure you have the following installed:
 
-* **Node.js** (version 18 or higher)
+* **Node.js** (version 22 or higher recommended, minimum 18)
 * **npm** or **yarn**
 * **MongoDB** (local installation or MongoDB Atlas account)
-* **Expo CLI** (`npm install -g expo-cli`)
+* **Expo CLI** (`npm install -g @expo/cli`)
 * **Git**
 * A mobile device or emulator for testing (iOS/Android)
 
