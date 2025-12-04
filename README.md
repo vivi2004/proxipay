@@ -52,7 +52,7 @@ Built with **React Native**, **Expo**, **Node.js**, and **MongoDB** for a comple
 
 Before you begin, ensure you have the following installed:
 
-* **Node.js** (version 22 or higher recommended, minimum 18)
+* **Node.js** (version 22.19.0 or higher recommended for backend compatibility)
 * **npm** or **yarn**
 * **MongoDB** (local installation or MongoDB Atlas account)
 * **Expo CLI** (`npm install -g @expo/cli`)
@@ -179,7 +179,7 @@ EXPO_PUBLIC_API_BASE_URL=http://localhost:3000/api
 **Note:** The app automatically detects the correct API URL based on your device:
 - Android Emulator: `http://10.0.2.2:3000/api`
 - iOS Simulator: `http://localhost:3000/api`
-- Physical Device: Uses the Expo development server host
+- Physical Device: Uses your development machine's IP address (e.g., `http://192.168.1.100:3000/api`), automatically detected from Expo's hostUri
 
 #### Start the Expo Development Server
 
