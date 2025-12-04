@@ -176,10 +176,10 @@ Create a `.env` file in the `proxipay-frontend` directory if you need to customi
 EXPO_PUBLIC_API_BASE_URL=http://localhost:3000/api
 ```
 
-**Note:** The app automatically detects the correct API URL based on your device:
+**Note:** The app automatically detects the correct API URL based on your device (see `src/api.ts` for implementation):
 - Android Emulator: `http://10.0.2.2:3000/api`
 - iOS Simulator: `http://localhost:3000/api`
-- Physical Device: Uses your development machine's IP address (e.g., `http://192.168.1.100:3000/api`), automatically detected from Expo's hostUri
+- Physical Device: Uses your development machine's IP address (e.g., `http://192.168.1.100:3000/api`), extracted from Expo's `hostUri` configuration
 
 #### Start the Expo Development Server
 
@@ -342,7 +342,7 @@ npm test
 
 ### Building for Production
 
-This project uses Expo ~54.0.0, which requires EAS Build for production builds.
+This project uses Expo ~54.0.0. For production builds, **EAS Build** is the recommended modern approach.
 
 #### Setup EAS Build
 ```bash
