@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "ProxiPay",
+    "slug": "proxipay",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "extra": {
+      "apiUrl": "http://192.168.137.1:3000",
+      "eas": {
+        "projectId": "9fce3ea1-60cc-430a-a59e-d5bbfc867f62"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.proxipay.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Scan merchant QR codes to pay offline.",
+        "NSLocalNetworkUsageDescription": "ProxiPay exchanges signed payment data on your local Wi‑Fi when you are not connected to the internet."
+      }
+    },
+    "android": {
+      "package": "com.proxipay.app",
+      "permissions": [
+        "CAMERA",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-secure-store"
+    ]
+  }
+}
