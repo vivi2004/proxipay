@@ -13,7 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "extra": {
-      "apiUrl": "http://192.168.137.1:3000",
+      "apiUrl": "https://proxipay-server.onrender.com",
       "eas": {
         "projectId": "9fce3ea1-60cc-430a-a59e-d5bbfc867f62"
       }

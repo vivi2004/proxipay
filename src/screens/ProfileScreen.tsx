@@ -15,7 +15,7 @@ export function ProfileScreen() {
       <View style={styles.card}>
         <Text style={styles.cardLabel}>API</Text>
         <Text style={styles.cardVal}>{API_URL}</Text>
-        <Text style={styles.hint}>Physical device: set expo.extra.apiUrl in app.json to your PC LAN IP.</Text>
+        <Text style={styles.hint}>Set `expo.extra.apiUrl` in app.json (or EXPO_PUBLIC_API_URL) to switch environments.</Text>
       </View>
       <Pressable
         style={[styles.btn, syncing && styles.off]}

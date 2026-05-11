@@ -27,7 +27,7 @@ export function RegisterScreen({ navigation }: Props) {
       const msg =
         backendError ||
         (raw === 'Network Error'
-          ? `Network Error\nCannot reach API at ${API_URL}\nCheck server, IP, port, and same Wi-Fi.`
+          ? `Network Error\nCannot reach API at ${API_URL}\nCheck backend URL and server health.`
           : raw) ||
         'Registration failed';
       Alert.alert('Register', String(msg));
